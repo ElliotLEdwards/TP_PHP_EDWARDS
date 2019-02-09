@@ -1,0 +1,6 @@
+/docker-compose.override.yml
+vendor/
+bin/
+var/logs/
+var/cache
+var/storage

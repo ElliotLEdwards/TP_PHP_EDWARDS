@@ -1,0 +1,39 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.2",
+        "beberlei/assert": "^2.8",
+        "mathiasverraes/classfunctions": "^1.1",
+        "moneyphp/money": "^3.2",
+        "phpunit/phpunit": "^7.5"
+    },
+    "require-dev": {
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Metinet\\": "src/Metinet"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Metinet\\": "tests/Metinet"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
+    },
+    "repositories": [],
+    "scripts": {},
+    "extra": {}
+}

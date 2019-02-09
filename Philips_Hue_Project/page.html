@@ -1,0 +1,63 @@
+
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">PHILIPS HUE PROJECT</h1>
+  <h1>Elliot Edwards</h1>
+  <?php 
+    require('./scripts/script.php'); 
+    echo "I have a $var"; 
+  ?>
+  <select id='lightSelector'>
+    <option value="1">Lampe TV 1</option>
+    <option value="2">Lampe TV 2</option>
+    <option value="3">Lumière canapé</option>
+    <option value="4">Desk</option>
+    <option value="5">Bed side table</option>
+  </select>
+  <script type="text/javascript" src="./scripts/jscript.js"></script>
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="#" class="w3-bar-item w3-button" onclick="lightsOn()">On</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="lightsOff()">Off</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="lightsRnB()">Red & Blue</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small" onclick="lightsGetState()">Get State</a>
+    </div>
+  </div>
+</header>
+<p id='json'></p>
+
+
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+</body>
+</html>
